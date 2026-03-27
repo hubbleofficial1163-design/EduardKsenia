@@ -94,7 +94,7 @@ document.addEventListener('DOMContentLoaded', function() {
     
     // Таймер обратного отсчета до 22.08.2026
     function updateCountdown() {
-        const weddingDate = new Date('2026-05-06T15:30:00').getTime();
+        const weddingDate = new Date('2026-06-06T15:00:00').getTime();
         const now = new Date().getTime();
         const timeLeft = weddingDate - now;
         
@@ -120,7 +120,7 @@ document.addEventListener('DOMContentLoaded', function() {
     // Генерация календаря на август 2026
     function generateCalendar() {
         const calendarContainer = document.getElementById('calendarContainer');
-        const weddingDate = new Date(2026, 5, 5); // Август 2026 (месяцы 0-11)
+        const weddingDate = new Date(2026, 5, 6); // Август 2026 (месяцы 0-11)
         const today = new Date();
         
         // Названия дней недели
@@ -158,7 +158,7 @@ document.addEventListener('DOMContentLoaded', function() {
             const currentDate = new Date(weddingDate.getFullYear(), weddingDate.getMonth(), day);
             
             // Проверяем, является ли это день свадьбы
-            if (day === 22) {
+            if (day === 6) {
                 cellClass += ' wedding-day';
             }
             // Проверяем, является ли это сегодняшний день (только если в том же месяце и году)
